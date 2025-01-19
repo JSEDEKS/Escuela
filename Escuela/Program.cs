@@ -6,18 +6,17 @@ namespace Escuela
     {
         static void Main(string[] args)
         {
-            // Crear la escuela
             Escuela escuela = new Escuela();
 
-            // Crear la primera clase
+            //crear primera clase
             Clase claseMatematicas = new Clase("Matemáticas");
 
-            // Estudiantes para Matemáticas
+            // Estudiantes para matematicas
             Estudiante estudiante1 = new Estudiante("Juan Pérez", 1);
             Estudiante estudiante2 = new Estudiante("María López", 2);
             Estudiante estudiante3 = new Estudiante("Pedro Martínez", 3);
 
-            // Profesor para Matemáticas
+            // Profesor para matematicas
             Profesor profesorMatematicas = new Profesor("Carlos Rodríguez");
             Curso cursoAlgebra = new Curso("Álgebra", 5, 20);
             Curso cursoGeometria = new Curso("Geometría", 4, 15);
@@ -25,20 +24,20 @@ namespace Escuela
             profesorMatematicas.AgregarCurso(cursoAlgebra);
             profesorMatematicas.AgregarCurso(cursoGeometria);
 
-            // Agregar estudiantes y profesor a la clase de Matemáticas
+            // Agregar estudiantes y profesor a la clase de matematicas
             claseMatematicas.AgregarEstudiante(estudiante1);
             claseMatematicas.AgregarEstudiante(estudiante2);
             claseMatematicas.AgregarEstudiante(estudiante3);
             claseMatematicas.AgregarProfesor(profesorMatematicas);
 
-            // Crear la segunda clase
+            // segunda clase
             Clase claseCiencias = new Clase("Ciencias");
 
-            // Estudiantes para Ciencias
+            // Estudiantes para clase de ciencias
             Estudiante estudiante4 = new Estudiante("Ana García", 4);
             Estudiante estudiante5 = new Estudiante("Luis Fernández", 5);
 
-            // Profesor para Ciencias
+            // Profesor para clase de ciencias
             Profesor profesorCiencias = new Profesor("Laura Gómez");
             Curso cursoBiologia = new Curso("Biología", 3, 10);
             Curso cursoFisica = new Curso("Física", 6, 25);
@@ -46,19 +45,19 @@ namespace Escuela
             profesorCiencias.AgregarCurso(cursoBiologia);
             profesorCiencias.AgregarCurso(cursoFisica);
 
-            // Agregar estudiantes y profesor a la clase de Ciencias
+            // Agregar estudiantes y profesor a la clase de ciencias
             claseCiencias.AgregarEstudiante(estudiante4);
             claseCiencias.AgregarEstudiante(estudiante5);
             claseCiencias.AgregarProfesor(profesorCiencias);
 
-            // Crear una tercera clase
+            // tercera clase
             Clase claseHistoria = new Clase("Historia");
 
-            // Estudiantes para Historia
+            // Estudiantes para clase de historia
             Estudiante estudiante6 = new Estudiante("Sofía Torres", 6);
             Estudiante estudiante7 = new Estudiante("David Ruiz", 7);
 
-            // Profesor para Historia
+            // Profesor para clase de historia
             Profesor profesorHistoria = new Profesor("Fernando Ramírez");
             Curso cursoHistoriaUniversal = new Curso("Historia Universal", 4, 18);
             Curso cursoHistoriaModerna = new Curso("Historia Moderna", 2, 12);
@@ -66,7 +65,7 @@ namespace Escuela
             profesorHistoria.AgregarCurso(cursoHistoriaUniversal);
             profesorHistoria.AgregarCurso(cursoHistoriaModerna);
 
-            // Agregar estudiantes y profesor a la clase de Historia
+            // Agregar estudiantes y profesor a la clase de historia
             claseHistoria.AgregarEstudiante(estudiante6);
             claseHistoria.AgregarEstudiante(estudiante7);
             claseHistoria.AgregarProfesor(profesorHistoria);
@@ -76,7 +75,7 @@ namespace Escuela
             escuela.AgregarClase(claseCiencias);
             escuela.AgregarClase(claseHistoria);
 
-            // Imprimir información de la escuela
+            // Imprimir informacion
             Console.WriteLine("Clases en la escuela:");
             foreach (var clase in escuela.Clases)
             {
